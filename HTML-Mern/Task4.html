@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            vertical-align: top;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .form-group > label {
+            flex: 0 0 100px;
+        }
+
+        .form-group > input,
+        .form-group > select,
+        .form-group > textarea {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="#">
+        <fieldset>
+            <legend>User Details</legend>
+            <div class="form-group">
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Full Name">
+            </div>
+
+            <div class="form-group">
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" placeholder="Username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="re-password">Re-Password:</label>
+                <input type="password" id="re-password" name="re-password" placeholder="Re-password">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" placeholder="Address" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" placeholder="Age" maxlength="3">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Save">
+        </fieldset>
+    </form>
+</body>
+</html>

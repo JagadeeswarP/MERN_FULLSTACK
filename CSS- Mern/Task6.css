@@ -1,0 +1,73 @@
+.container {
+    /* background-color: yellow; */
+    width: 500px;
+    height:500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img1 img {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+label {
+    font-weight: bold;
+    text-align:left;
+}
+
+#login {
+    color: white;
+    background-color: rgb(38, 229, 24);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+}
+
+.check input {
+    margin-right: 5px;
+}
+
+.container .bottom-row{
+    display:flex;
+    justify-content:space-between;
+}
+
+a{
+    padding-top:10px;
+}
+
+#cancel{
+    background-color:red;
+}
+
+.hover{
+    width:515px;
+    border-radius:5px
+}
+
+.hover:hover{
+    border:2px solid black;
+}
+
+
+
+

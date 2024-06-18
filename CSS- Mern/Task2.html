@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <style>
+        .container {
+            width: 500px;
+            display: flex;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .inner {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            padding-top: 10px;
+            border: 1px solid black;
+            color: rgb(35, 2, 66);
+            cursor: pointer;
+            background-color: hwb(0 82% 18%);
+        }
+
+        .container1 {
+            border: 1px solid black;
+            width: 300px;
+            padding: 8px;
+        }
+
+        .inner1 {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            font-size: 30px;
+            background-color: skyblue;
+            color: darkblue;
+        }
+
+        .inner1:first-child {
+            color: blue;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+        }
+
+        .two {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .inner1:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .inner:hover {
+            background-color: darkgray;
+            color: white;
+        }
+
+        .one {
+            margin: 10px;
+        }
+
+        
+        .inner1 a {
+            color: inherit; 
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+            width: 100%; 
+            height: 100%; 
+            padding-left: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one">
+            <h2>Vertical Navigation Bar</h2>
+            <div class="container1">
+                <div class="inner1">
+                    <a href="#1">Home</a>
+                </div>
+                <div class="inner1">
+                    <a href="#2">Java</a>
+                </div>
+                <div class="inner1">
+                    <a href="#3">HTML</a>
+                </div>
+                <div class="inner1">
+                    <a href="#4">CSS</a>
+                </div>
+                <div class="inner1">
+                    <a href="#5">Bootstrap</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="two">
+            <h2>Horizontal Navigation Bar</h2>
+            <div class="container">
+                <div class="inner">Home</div>
+                <div class="inner">Java</div>
+                <div class="inner">HTML</div>
+                <div class="inner">CSS</div>
+                <div class="inner">Bootstrap</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

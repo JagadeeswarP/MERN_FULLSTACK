@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        table {
+            border: 2px solid black;
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        label {
+            width:auto;
+        }
+
+        tr:hover {background-color: #D6EEEE;}
+        input:hover, textarea:hover, select:hover {background-color: #D6EEEE;}
+
+        input, textarea, select {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+        }
+
+        .radio-group input, .checkbox-group input, .c2-group input {
+            width: auto;
+        }
+
+        .button{
+            text-align:center;
+            margin-top:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><label for="rpassword">Re-enter Password</label></td>
+                <td><input type="password" id="rpassword" name="rpassword"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="text" id="age" name="age" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td><label for="pnumber">Phone Number</label></td>
+                <td><input type="text" id="pnumber" name="pnumber"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><textarea id="address" name="address" placeholder="Address" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="state">State</label></td>
+                <td><input type="text" id="state" name="state"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option>Choose your Country</option>
+                        <option>India</option>
+                        <option>Russia</option>
+                        <option>America</option>
+                        <option>Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="lang">Languages Known</label></td>
+                <td class="checkbox-group">
+                    <label><input type="checkbox" id="Eng" name="lang" value="English"> English</label>
+                    <label><input type="checkbox" id="Tel" name="lang" value="Telugu"> Telugu</label>
+                    <label><input type="checkbox" id="Hin" name="lang" value="Hindi"> Hindi</label>
+                    <label><input type="checkbox" id="Hin" name="lang" value="Tamil"> Tamil</label>
+                    <label><input type="checkbox" id="Hin" name="lang" value="Kannada"> Kannada</label>
+                    <label><input type="checkbox" id="Hin" name="lang" value="Hindi"> Malayalam</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="c2-group" colspan="2">
+                    <input type="checkbox" id="war" name="war">
+                    <label for="war">Hereby I declare all the fiven details are true</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <a href="#">Log into Ethnus Website</a>
+                </td>
+            </tr>
+        </table>
+            
+    </form>
+  
+        <div class="button">
+            <button type="button">Register</button>
+        </div>
+        
+</body>
+</html>
